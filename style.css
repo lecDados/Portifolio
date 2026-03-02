@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+
+body{
+    background-color:rgb(44, 44, 44) ;
+
+}
+header{
+    display: flex;
+    
+}
+span{
+    position: fixed;
+    background-color: #bd5616;
+    height: 4px;
+    width: 100%;
+    top: 90px;
+    left: 300px;
+}
+h1{
+    color: #bd5616 ;
+    font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+h2{
+    font-size: 50px;
+    font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main ul{
+    position: fixed;
+    display: flex;
+    flex-direction:row;
+    gap: 80px;
+    right: 100px;
+    z-index: 99;
+    
+    align-items: center;
+    border-radius: 7px;
+    
+    
+}
+main li{
+    color: #ffdec9 ;
+    width: 100px;
+    text-align: center;
+    list-style: none;
+    
+    font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 13px;
+    transition: 0.8s;  
+}
+main a{
+    color: #ffdec9 ;
+    text-decoration: none;
+}
+main li:hover{
+    transform: scale(1.2);
+    transition: 0.8s;
+    cursor: pointer;
+}
+#github {
+    background-image: url("github (1).svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    top: 20px;
+    position: fixed;
+    right: 40px;
+    z-index: 98;
+    filter:invert(1);
+}
+#corpo{
+    position: fixed;
+    
+    background-color:#bd5616 ;
+    width: 50%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    clip-path: polygon(90% 0%, 100% 0%, 100% 100%, 0% 100%); 
+    z-index: 0;   
+}
+#corpo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: #364853; /* cor diferente pra destacar */
+
+    /* INVERTIDO */
+    clip-path: polygon(0% 0%, 10% 0%, 100% 100%, 0% 100%);
+
+    transform: scale(1.05); /* deixa um pouco maior */
+    z-index: -1;
+} 
+
+
+#image {
+    top: 100px;
+    padding-bottom: 40px;
+    width: 700px;      /* ou 100% */
+    height: 700px;     /* defina uma altura */
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;  /* 🔥 NÃO corta a imagem */
+    filter: drop-shadow(0px 0px 3px #fa8211);
+    /*filter: brightness(0.85) contrast(1.1);*/
+}
+
+#container{
+    position: fixed;
+    background-color: #ffffff8a;
+    width: 400px;
+    height: 180px;
+    bottom: 180px;
+    border-radius: 7px;
+    color: rgb(46, 42, 38);
+    font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal; padding: 20px;
+    
+}.slider {
+    background-color: rgb(44, 44, 44);
+    width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    position: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content img {
+    width: 250px;
+    height: 250px;
+    border: solid 2px #d9651a;
+    
+}
+
+.info {
+    color: white;
+    text-align: left;
+}
+
+.controls {
+    position: fixed;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    left: 20%;
+    bottom: 40px;
+}
+
+.controls button {
+    background: #d9651a;
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.controls button:hover {
+    opacity: 0.8;
+}
+#slider-desc{
+    columns: 2;
+}
+#proje{
+    transition: 0.8s;
+background-color: #92929244;
+border: solid 2px #f8efe9;
+padding: 10px 60px;
+border-radius: 15px;
+color: #f8efe9;
+font-size: 20px;
+bottom: 50px;
+position: fixed;
+left: 50%;
+font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#container li{
+    color: rgb(168, 168, 168);
+    background-color: rgb(44, 44, 44);
+    max-width: 100px;
+    text-align: center;
+    list-style: none;
+    padding: 2px 7px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 7px;
+    font-size: 11px;
+    transition: 0.8s;
+}
+#container ul{
+    position: fixed;
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+    right: 150px;
+    z-index: 99;
+}
+#container li:hover{
+    transition: 0.8s;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+#proje a{
+    text-decoration: none;
+    color: #f8efe9;
+}
+#proje:hover{
+    transform: scale(1.08);
+    transition: 0.8s;
+}
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    span {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    main ul {
+        position: relative;
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 20px;
+        left: -20px;
+        
+    }
+    #github {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 15px 0;
+    }
+
+    /* REMOVE FUNDO LATERAL NO MOBILE */
+    #corpo {
+        display: none;
+    }
+
+    /* IMAGE VAI PARA O TOPO */
+    #image {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #image img {
+        position: absolute;
+        width: 80%;
+        height: auto;
+        left: 30%;
+    }
+
+    #container {
+        position: relative;
+        width: 50%;
+        height: auto;
+        bottom: 0;
+        margin-top: 20px;
+        left: -18%;
+    }
+
+    #container ul {
+        position: relative;
+        flex-direction: column;
+        gap: 10px;
+        right: 0;
+    }
+
+    .slider {
+        position: relative;
+        width: 95%;
+    }
+
+    .content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .controls {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin: 20px 0;
+    }
+
+    #proje {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin: 20px auto;
+        display: block;
+    }
+
+}

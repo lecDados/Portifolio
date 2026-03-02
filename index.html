@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    <header><h1>Portfólio</h1><span></span> <main><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="https://github.com/lecDados?tab=repositories">Sobre</a></li>
+    <li><a href="https://github.com/lecDados">Contato</a></li>
+    
+</ul></main><div id="github"></div></header>
+<div class="slider">
+
+    <div class="content">
+        <img id="slider-img" src="">
+        
+        <div class="info">
+            <h2 id="slider-title"></h2>
+            <p id="slider-desc"></p>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="prev"><</button>
+        <button id="next">></button>
+    </div>
+
+</div>
+
+    <div id="corpo">
+    </div>
+    <div id="image">
+        <img src="luizimg.png" alt="" srcset="">
+        <div id="container">
+            <h3>Luiz Eduardo</h3>
+            <p>Desenvolvedor | Backend Junior</p>
+            <p><ul><li>Estudante de Tecnologia da Informação | UNIVESP</li><li>4 anos de dedicação nos estudos de progamação</li><li>Experiencia com | Express.js, Node.js, Typescript, MySql...</li></ul></p>
+        </div>
+    </div>
+    <button id="proje"><a href="https://github.com/lecDados?tab=repositories">Projetos</a></button>
+    <script src="script.js"></script>
+    <script>
+        const github = document.querySelector("#github");
+
+github.addEventListener("click", () => {
+    window.location.href = "https://github.com/lecDados";
+});
+    </script>
+</body>
+</html>
